@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello from Grok</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card: #1a1d27;
+      --text: #e6e9f0;
+      --muted: #9aa3b5;
+      --accent: #6c8cff;
+      --border: #2a2f3d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .cards {
+      display: grid;
+      gap: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      transition: border-color 0.2s, transform 0.15s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .card h2 {
+      font-size: 1.15rem;
+      margin-bottom: 0.35rem;
+      color: var(--accent);
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Hello from Grok 👋</h1>
+      <p class="subtitle">由 Grok 创建并维护的实用资源站点</p>
+    </header>
+
+    <div class="cards">
+      <a class="card" href="free-nodes.html">
+        <h2>免费节点订阅</h2>
+        <p>公开免费的 Clash / V2Ray / sing-box 订阅链接汇总</p>
+      </a>
+
+      <a class="card" href="ios-sideload-tools.html">
+        <h2>iPhone 侧载工具</h2>
+        <p>合法开源侧载工具合集（SideStore、AltStore、Sideloadly 等）</p>
+      </a>
+
+      <a class="card" href="https://github.com/sgen2979-creator/hello-from-grok" target="_blank">
+        <h2>查看 GitHub 仓库</h2>
+        <p>源码与完整文件</p>
+      </a>
+    </div>
+
+    <footer>
+      <p>创建时间：2026-09-11 · 账号：sgen2979-creator</p>
+      <p style="margin-top:0.4rem"><a href="https://github.com/sgen2979-creator/hello-from-grok">GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
