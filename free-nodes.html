@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>免费节点订阅 - Hello from Grok</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card: #1a1d27;
+      --text: #e6e9f0;
+      --muted: #9aa3b5;
+      --accent: #6c8cff;
+      --border: #2a2f3d;
+      --warn: #f0b429;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 760px; margin: 0 auto; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.25rem; margin: 2rem 0 0.75rem; color: var(--accent); }
+    p, li { color: var(--text); margin-bottom: 0.6rem; }
+    .muted { color: var(--muted); }
+    .back { display: inline-block; margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.3rem;
+      margin: 1rem 0;
+    }
+    .warn {
+      border-left: 4px solid var(--warn);
+      padding-left: 1rem;
+      margin: 1.2rem 0;
+      color: var(--muted);
+    }
+    code, .link {
+      background: #252836;
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      word-break: break-all;
+    }
+    ul { padding-left: 1.3rem; margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="index.html">← 返回首页</a>
+
+    <h1>免费节点订阅</h1>
+    <p class="muted">公开免费的 Clash / V2Ray / sing-box 订阅链接汇总</p>
+
+    <div class="warn">
+      <strong>免责声明：</strong>以下链接全部来自 GitHub 上公开分享的免费节点源，属于多人共享。速度和稳定性不保证，节点随时可能失效。请遵守当地法律法规，仅建议用于临时测试或学习。如需稳定服务请使用正规付费机场。
+    </div>
+
+    <h2>1. Au1rxx / free-vpn-subscriptions（推荐）</h2>
+    <p>每小时更新 + 实测存活节点</p>
+    <div class="card">
+      <p><strong>Clash：</strong><br><a class="link" href="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/clash.yaml" target="_blank">https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/clash.yaml</a></p>
+      <p><strong>sing-box：</strong><br><a class="link" href="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/singbox.json" target="_blank">https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/singbox.json</a></p>
+      <p><strong>v2ray / Shadowrocket / NekoBox：</strong><br><a class="link" href="https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt" target="_blank">https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt</a></p>
+      <p>仓库：<a href="https://github.com/Au1rxx/free-vpn-subscriptions" target="_blank">https://github.com/Au1rxx/free-vpn-subscriptions</a></p>
+    </div>
+
+    <h2>2. Pawdroid / Free-servers</h2>
+    <p>老牌免费源，更新较频繁</p>
+    <div class="card">
+      <p>请直接进入仓库查看最新订阅链接：<br>
+      <a href="https://github.com/Pawdroid/Free-servers" target="_blank">https://github.com/Pawdroid/Free-servers</a></p>
+    </div>
+
+    <h2>3. 其他可参考的公开免费源</h2>
+    <ul>
+      <li><a href="https://github.com/VPN-Subcription-Links/ClashX-V2Ray-TopFreeProxy" target="_blank">VPN-Subcription-Links / ClashX-V2Ray-TopFreeProxy</a></li>
+      <li><a href="https://github.com/xiaoji235/airport-free" target="_blank">xiaoji235 / airport-free</a></li>
+      <li><a href="https://github.com/0xRadikal/Free-v2ray-Configs" target="_blank">0xRadikal / Free-v2ray-Configs</a></li>
+      <li><a href="https://github.com/crossxx-labs/free-proxy" target="_blank">crossxx-labs / free-proxy</a></li>
+    </ul>
+
+    <h2>使用方法</h2>
+    <ol style="padding-left:1.3rem">
+      <li>打开客户端（Clash Verge、v2rayN、v2rayNG、Shadowrocket、NekoBox、Hiddify 等）</li>
+      <li>找到「订阅」或「Profiles」→ 添加订阅</li>
+      <li>粘贴上面任意订阅链接</li>
+      <li>更新订阅后选择节点连接</li>
+    </ol>
+
+    <p style="margin-top:2rem" class="muted">更新时间：2026-09-11</p>
+    <p><a href="index.html">← 返回首页</a></p>
+  </div>
+</body>
+</html>
