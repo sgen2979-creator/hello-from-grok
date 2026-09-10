@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone 侧载工具 - Hello from Grok</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card: #1a1d27;
+      --text: #e6e9f0;
+      --muted: #9aa3b5;
+      --accent: #6c8cff;
+      --border: #2a2f3d;
+      --warn: #f0b429;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 760px; margin: 0 auto; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.25rem; margin: 2rem 0 0.75rem; color: var(--accent); }
+    p, li { margin-bottom: 0.55rem; }
+    .muted { color: var(--muted); }
+    .back { display: inline-block; margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.3rem;
+      margin: 1rem 0;
+    }
+    .warn {
+      border-left: 4px solid var(--warn);
+      padding-left: 1rem;
+      margin: 1.2rem 0;
+      color: var(--muted);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.6rem 0.8rem;
+      text-align: left;
+    }
+    th { background: var(--card); }
+    ul, ol { padding-left: 1.3rem; margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="index.html">← 返回首页</a>
+
+    <h1>iPhone 侧载工具</h1>
+    <p class="muted">合法开源侧载工具合集（仅整理官方项目）</p>
+
+    <div class="warn">
+      <strong>免责声明：</strong>本页面仅整理公开、开源的合法侧载工具，用于个人开发测试。免费 Apple ID 签名通常有效期为 7 天，同时最多约 3 个应用。请遵守当地法律法规和 Apple 服务条款。不要从非官方渠道下载 IPA 或证书。
+    </div>
+
+    <h2>1. SideStore（目前最推荐）</h2>
+    <div class="card">
+      <p>安装后基本不需要电脑，可在设备上自动刷新签名。</p>
+      <p>适用：iOS 15 及以上（包括较新系统）</p>
+      <p>官网：<a href="https://sidestore.io/" target="_blank">https://sidestore.io/</a></p>
+      <p>GitHub：<a href="https://github.com/SideStore/SideStore" target="_blank">https://github.com/SideStore/SideStore</a></p>
+    </div>
+
+    <h2>2. AltStore（经典稳定）</h2>
+    <div class="card">
+      <p>需要电脑上的 AltServer 配合刷新（可通过 Wi-Fi）。</p>
+      <p>官网：<a href="https://altstore.io/" target="_blank">https://altstore.io/</a></p>
+      <p>GitHub：<a href="https://github.com/altstoreio/AltStore" target="_blank">https://github.com/altstoreio/AltStore</a></p>
+    </div>
+
+    <h2>3. Sideloadly（电脑端最简单）</h2>
+    <div class="card">
+      <p>Windows / Mac 拖拽 IPA 即可安装，支持注入插件。</p>
+      <p>官网：<a href="https://sideloadly.io/" target="_blank">https://sideloadly.io/</a></p>
+    </div>
+
+    <h2>4. iloader（安装 SideStore 辅助工具）</h2>
+    <div class="card">
+      <p>帮助更方便地安装 SideStore，支持 Windows / macOS / Linux。</p>
+      <p>官网：<a href="https://iloader.app/" target="_blank">https://iloader.app/</a></p>
+      <p>GitHub：<a href="https://github.com/nab138/iloader" target="_blank">https://github.com/nab138/iloader</a></p>
+    </div>
+
+    <h2>5. SideInstaller（纯设备端安装）</h2>
+    <div class="card">
+      <p>尝试在手机上直接安装 SideStore（无需电脑）。</p>
+      <p>GitHub：<a href="https://github.com/FrizzleM/SideInstaller" target="_blank">https://github.com/FrizzleM/SideInstaller</a></p>
+      <p>页面：<a href="https://frizzlem.github.io/SideInstaller/" target="_blank">https://frizzlem.github.io/SideInstaller/</a></p>
+    </div>
+
+    <h2>6. TrollStore（永久安装，仅限旧系统）</h2>
+    <div class="card">
+      <p>利用漏洞实现永久签名，无需刷新。</p>
+      <p><strong>重要限制：</strong>只支持 iOS 14.0 ~ 17.0，更高系统已失效。</p>
+      <p>GitHub：<a href="https://github.com/opa334/TrollStore" target="_blank">https://github.com/opa334/TrollStore</a></p>
+    </div>
+
+    <h2>选择建议</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>你的情况</th>
+          <th>推荐工具</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>想尽量少用电脑</td><td>SideStore</td></tr>
+        <tr><td>有电脑，追求稳定</td><td>AltStore 或 Sideloadly</td></tr>
+        <tr><td>系统是 iOS 17.0 及以下</td><td>优先考虑 TrollStore</td></tr>
+        <tr><td>只是临时装一两个应用</td><td>Sideloadly</td></tr>
+        <tr><td>想在手机上完成安装</td><td>SideInstaller / iloader</td></tr>
+      </tbody>
+    </table>
+
+    <h2>使用提醒</h2>
+    <ul>
+      <li>强烈建议使用小号 Apple ID 进行签名，不要用主力账号。</li>
+      <li>免费账号每周可创建的 App ID 数量有限。</li>
+      <li>签名过期后应用会打不开，需要刷新。</li>
+      <li>不要去搜「企业证书」「Scarlet」「全能签」等来路不明的源，风险很高。</li>
+    </ul>
+
+    <p style="margin-top:2rem" class="muted">更新时间：2026-09-11</p>
+    <p><a href="index.html">← 返回首页</a></p>
+  </div>
+</body>
+</html>
